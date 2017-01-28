@@ -1,0 +1,170 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "materialize/components/color";
+
+$primary-color: color("light-blue", "darken-4") !default;
+$secondary-color: color("amber", "darken-2") !default;
+
+@import 'materialize';
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.categories-row a.btn {
+  margin: 10px;
+  width: 80%;
+}
+
+.btn-floating.halfway-fab {
+  &.left {
+    right: auto;
+    left: 24px;
+  }
+
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+
+i {
+  vertical-align: bottom;
+}
+
+.brand-logo img {
+  margin-top: 10px;
+}
+
+.svg-wrapper {
+  align-items: center;
+  display: flex;
+  height: 200px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  position: relative;
+
+  svg {
+    overflow: visible;
+    transform: scale(3);
+  }
+}
+
+.loader {
+  #loader-front {
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    animation-iteration-count: infinite;
+    transform-origin: center;
+  }
+
+  #loader-back {
+    animation-name: spin;
+    animation-direction: reverse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+  }
+}
+
+@keyframes spin {
+ 0% {
+    transform: rotate3d(0,0,1,0deg);
+ }
+ 100% {
+    transform: rotate3d(0,0,1,360deg);
+ }
+}
+
+.litmus-logo {
+  svg {
+    transform: scale(2.5) rotate3d(0,0,1,90deg);
+  }
+
+  #large-radius {
+    animation-name: radiate;
+    animation-duration: 4s;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+  }
+
+  #small-radius {
+    animation-name: radiate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    transform-origin: center;
+  }
+}
+
+@keyframes radiate {
+ 0% {
+  opacity: 1;
+  transform: translateY(0);
+ }
+ 50% {
+  opacity: 0;
+  transform: translateY(-40px);
+ }
+ 51% {
+  opacity: 0;
+  transform: translateY(-40px) rotate3d(0,0,1,180deg);
+ }
+ 52% {
+  opacity: 1;
+ }
+ 100% {
+  opacity: 0;
+  transform: translateY(0) rotate3d(0,0,1,180deg);
+ }
+}
+
+// todo: animate
+.whisper-logo {
+  svg {
+    transform: scale(3.5);
+  }
+
+  #large-radius {
+    animation-name: radiate;
+    animation-duration: 4s;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+  }
+
+  #small-radius {
+    animation-name: radiate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    transform-origin: center;
+  }
+}

@@ -1,0 +1,22 @@
+.container
+  %br
+  %br
+  .section.center-align
+    %h4= @tweet.text
+  %br
+  .divider
+  %br
+  .section.center-align
+    %h5 Categories
+    .row.categories-row
+      - @categories.each do |category|
+        .col.s4
+          %a.btn.btn-small.waves-effect{href: "/whisper/tweets/#{@tweet.id}/#{category.slug}",class: category.color}= category.name
+      .col.s4
+        %a.btn.btn-small.grey.waves-effect{href: "/whisper/tweets/#{@tweet.id}/na"} Not Categorizable
+  %br
+  .divider
+  %br
+  .section.center-align
+    %a.btn.red.darken-2.btn-small{href: "/whisper/tweets/stop"} Stop Work on Whisper
+  %br

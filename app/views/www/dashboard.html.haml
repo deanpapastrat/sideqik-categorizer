@@ -1,0 +1,24 @@
+.container
+  %br
+  %br
+  .section.center-align
+    = render 'shared/loader'
+    %h3 You're ready to go!
+    %p Choose a project to work on below.
+  .section
+    .row
+      .col.s4
+      .col.s4
+        .card
+          .card-image
+            %img{src: image_path('project-whisper.jpg')}
+            %a.btn-floating.halfway-fab.purple.darken-2.waves-effect{href: '/whisper'}
+              %i.material-icons arrow_forward
+          .card-content
+            %span.card-title Project Whisper
+            %p Project Whisper seeks to understand what creators are talking about online and their relevance to certain topics.
+            %br
+            %p
+              %b Task:
+              Categorize content into a list of sub-topics.
+      .col.s4

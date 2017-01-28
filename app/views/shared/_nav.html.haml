@@ -1,0 +1,20 @@
+%header
+  %nav{class: "#{content_for? :tabnav ? 'nav-extended' : ''}"}
+    .nav-wrapper.row
+      .col.s12
+        %a.brand-logo{href: current_user ? '/dashboard' : '/'}
+          %img{src: image_path('ml-logo.svg'), height: 40}
+        %ul.right
+          - if current_user
+            %li{class: "#{request.fullpath.start_with?('/dashboard') ? "active" : ""}"}
+              %a{href: '/dashboard'} Dashboard
+            %li{class: "#{request.fullpath.start_with?('/whisper') ? "active" : ""}"}
+              %a{href: '/whisper'} Whisper
+          - else
+            %li{class: "#{request.fullpath.start_with?('/projects') ? "active" : ""}"}
+              %a{href: '/projects'} Projects
+            %li{class: "#{request.fullpath.start_with?('/about') ? "active" : ""}"}
+              %a{href: '/about'} About
+      - if content_for? :tabnav
+        .nav-content
+          .tabs.tabs-transparent
