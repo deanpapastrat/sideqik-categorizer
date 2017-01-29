@@ -418,6 +418,7 @@ class Category
         {name: 'Body Art', slug: 'fashion-bodyart'},
         {name: 'Clothing', slug: 'fashion-clothing'},
         {name: 'Fashion', slug: 'fashion-fashion'},
+        {name: 'Hair Styling', slug: 'fashion-hair'},
         {name: 'Jewelry', slug: 'fashion-jewelry'}
       ]
     },
