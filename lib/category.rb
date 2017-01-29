@@ -226,7 +226,7 @@ class Category
         {name: 'Dating', slug: 'lifestyle-dating'},
         {name: 'Divorce', slug: 'lifestyle-divorce'},
         {name: 'Gay Life', slug: 'lifestyle-gay'},
-        {name: 'Holidays', slug: 'lifestyle-holidays'}
+        {name: 'Holidays', slug: 'lifestyle-holidays'},
         {name: 'Marriage', slug: 'lifestyle-marriage'},
         {name: 'Senior Living', slug: 'lifestyle-seniorliving'},
         {name: 'Teens', slug: 'lifestyle-teen'},
