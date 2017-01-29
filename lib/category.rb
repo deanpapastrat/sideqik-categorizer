@@ -355,6 +355,7 @@ class Category
       slug: "shopping",
       color: 'light-blue darken-4',
       subcategories: [
+        {name: 'Apps', slug: 'shopping-apps'},
         {name: 'Contests', slug: 'shopping-contests'},
         {name: 'E-Commerce', slug: 'shopping-ecom'},
         {name: 'Retail', slug: 'shopping-retail'},
