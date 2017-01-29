@@ -261,6 +261,7 @@ class Category
       slug: "news",
       color: 'amber',
       subcategories: [
+        {name: 'Tabloids', slug: 'news-tabloids'},
         {name: 'International News', slug: 'news-intnews'},
         {name: 'Local News', slug: 'news-locnews'},
         {name: 'National News', slug: 'news-natnews'}
