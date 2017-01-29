@@ -200,6 +200,7 @@ class Category
       color: 'green',
       subcategories: [
         {name: 'Appliances', slug: 'home-appliances'},
+        {name: 'Cleaning', slug: 'home-cleaning'},
         {name: 'Environmental Safety', slug: 'home-ecosafety'},
         {name: 'Gardening', slug: 'home-gardening'},
         {name: 'Home Repair', slug: 'home-homerepair'},
@@ -333,7 +334,8 @@ class Category
         {name: 'Islam', slug: 'religion-islam'},
         {name: 'Judaism', slug: 'religion-judaism'},
         {name: 'Latter Day Saints', slug: 'religion-mormon'},
-        {name: 'Pagan', slug: 'religion-pagan'}
+        {name: 'Pagan', slug: 'religion-pagan'},
+        {name: 'General Spirituality', slug: 'religion-spirituality'}
       ]
     },
     science: {
