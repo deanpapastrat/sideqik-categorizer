@@ -42,6 +42,7 @@ class Category
       color: 'red',
       subcategories: [
         {name: 'Auto Parts', slug: 'auto-autoparts'},
+        {name: 'Consumer Cars', slug: 'auto-consumercars'},
         {name: 'Motorcycles', slug: 'auto-motorcycles'},
         {name: 'Off-Road Vehicles', slug: 'auto-offroaders'},
         {name: 'Sport Vehicles', slug: 'auto-sportcars'},
